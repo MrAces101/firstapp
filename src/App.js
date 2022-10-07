@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import Heading from "./components/Heading";
+import Promo from "./components/Promo";
 
 // function App() {
 //   return (
@@ -25,16 +27,22 @@ import './App.css';
 
 // From Passing Props Exercise
 
-import Heading from "./components/Heading";
+// function App() {
+//     return (
+//         <div className="App">
+//             <Heading firstName="Bob Jones" />
+//             <Heading firstName="Sam" />
+//             <Heading firstName="Moses" />
+//         </div>
+//     );
+// };
 
 function App() {
-    return (
-        <div className="App">
-            <Heading firstName="Bob Jones" />
-            <Heading firstName="Sam" />
-            <Heading firstName="Moses" />
-        </div>
-    );
-};
-
+  return (
+      <div className="App">
+          <Promo heading="Don't miss this deal!" />
+          <Promo promoSubHeading="Subscribe to my newsletter and get all the items at 50% off!" />
+      </div>
+  );
+}
 export default App;
