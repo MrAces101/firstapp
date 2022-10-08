@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import React from 'react';
+// import logo from './logo.svg';
+
 // import './App.css';
 
 // // Simple header
@@ -29,18 +29,38 @@ import React from 'react';
 
 // export default App;
 
-function App() {
-  const imgUrl = "https://picsum.photos/400/265";
-  return ( 
-    <div> 
-      <img height={200} src={logo} alt="Logo img" />
+// function App() {
+//   const imgUrl = "https://picsum.photos/400/265";
+//   return ( 
+//     <div> 
+//       <img height={200} src={logo} alt="Logo img" />
 
-      <img height={200} src={require('./logo.svg')}
-      alt="required img" />
+//       <img height={200} src={require('./logo.svg')}
+//       alt="required img" />
 
-      <img height={200} src={imgUrl} alt="img from web" />
-    </div> 
-  ); 
-}
+//       <img height={200} src={imgUrl} alt="img from web" />
+//     </div> 
+//   ); 
+// }
+
+// export default App;
+
+// Play video and audio
+import ReactPlayer from "react-player/youtube";
+import React from 'react';
+
+const App = () => {
+  return (
+    <div>
+      <MyVideo />
+    </div>
+  );
+};
+
+const MyVideo = () => {
+  return (
+    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+  );
+};
 
 export default App;
